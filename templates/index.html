@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>Index</title>
+    </head>
+    <body>
+        Привет, {% if current_user.is_authenticated %}
+             {{ current_user.id }}! Выходишь? <a href="{{ url_for('logout') }}">Выходи.</a>
+                {% else %} незнакомец. <a href="{{ url_for('login') }}">Заходи!</a>
+        {% endif %}
+    </body>
+</html>

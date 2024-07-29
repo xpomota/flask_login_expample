@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <form method="post">
+        {{ form.csrf_token }}
+        {{ form.login.label }} {{ form.login }}<br />
+        {{ form.password.label }} {{ form.password }}<br />
+        {{ form.submit }}
+        </form>
+    </body>
+</html>
